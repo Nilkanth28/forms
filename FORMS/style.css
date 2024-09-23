@@ -1,0 +1,198 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.top-nav {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav .logo {
+    font-size: 24px;
+}
+
+.top-nav .nav-items a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.side-nav {
+    /* width: 200px; */
+    background-color: #444;
+    color: white;
+    padding-top: 20px;
+    flex-shrink: 0;
+}
+
+.side-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* min-width: 300px; */
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    padding: 6px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: red ;
+    background-color: #f1f1f1 ;
+}
+
+/* button:hover {
+    background-color: #0056b3;
+} */
+
+.flex-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#user-form .user-field {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* #user-form .user-field input,
+#user-form .user-field select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 50%;
+    min-width: 150px;  Ensure a minimum width for smaller screens
+} */
+
+#user-form .user-field button.delete-field {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* 
+#user-form .user-field button.delete-field i {
+    color: red;
+    font-size: 20px;
+} */
+
+#add-user-field{
+    /* padding: 5px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    /* width: 50%; */
+    /* min-width: 150px;  Ensure a minimum width for smaller screens */
+}
+
+.user-field input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 45%;
+    /* min-width: 150px;  Ensure a minimum width for smaller screens */
+}
+
+.user-field select{
+
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 45%;
+    /* min-width: 150px;  Ensure a minimum width for smaller screens */
+
+}
+
+.user-field{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user-field div {
+
+    display: flex;
+    gap: 2px;
+    /* flex-wrap: wrap; */
+}
+
+.user-field button {
+    /* margin-left: 100px; */
+    margin-bottom: 5px;
+    padding: 0px;
+    margin-left: 15px;
+    /* padding-bottom: 5px; */
+   
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation Bar -->
+    <div class="side-nav">
+        <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-users"></i> Users</a>
+        <a href="#"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- First Column: Basic User Information -->
+        <div class="column">
+            <h2>Basic User Information</h2>
+            <form id="basic-user-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role">
+                        <option value="admin">Admin</option>
+                        <option value="editor">Editor</option>
+                        <option value="viewer">Viewer</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- Second Column: Dynamic User Fields -->
+        <div class="column" id="dynamic-fields">
+            <h2>Dynamic Fields</h2>
+            <div class="flex-buttons">
+                <button id="add-basic-user-field" style="background-color: #007BFF; color: white;">Add Basic User Information</button>
+                <button id="add-dynamic-fields" style="background-color: #007BFF; color: white;">Add Fields</button>    
+            </div>
+            <div id="user-form">
+                <!-- Dynamic fields will be added here -->
+            </div>
+        </div>
+
+        <!-- Third Column: Other Fields -->
+        <div class="column">
+            <h2>Other Fields</h2>
+            <div class="flex-buttons">
+                <button id="add-other-fields" style="background-color: #007BFF; color: white;">Add Other Fields</button>
+                <button id="add-conditional-fields" style="background-color: #007BFF; color: white;">Add Conditional Fields</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

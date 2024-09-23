@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.date-container {
+    position: relative;
+    width: 180px; /* Ensure the container has enough space */
+}
+
+.date-field {
+    padding: 5px 0px 5px 5px; /* Add right padding to make space for the icon */
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.calendar-icon:hover {
+    color: #007BFF; /* Change icon color on hover */
+}
+
+.error-msg {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Flatpickr calendar styling */
+.flatpickr-calendar {
+    font-size: 14px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input with Custom Calendar</title>
+    <link rel="stylesheet" href="date.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+</head>
+<body>
+    <div class="date-container">
+        <input type="text" id="dateInput" placeholder="dd/mm/yyyy" class="date-field" maxlength="10">
+        <i class="calendar-icon" id="calendarIcon">&#x1F4C5;</i> <!-- Calendar icon -->
+        <div class="error-msg" id="errorMsg"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="date.js"></script>
+</body>
+</html>
